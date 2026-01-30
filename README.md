@@ -1,51 +1,62 @@
 # Pós IA – Fase 1 | Assistente Especialista em Automação e IA aplicada a Produtos Digitais
 
 ## 📌 Visão Geral
-Este repositório contém o desenvolvimento de um assistente virtual especializado em Automação e Inteligência Artificial aplicada a Produtos Digitais, criado como parte do **Desafio Prático da Fase 1** da Pós-Graduação em **Inteligência Artificial e Automação** da Rocketseat.
 
-O assistente foi projetado para atuar como uma fonte de conhecimento fechada, operando com foco técnico e estratégico, respeitando limites claros de escopo e governança.
+Este repositório documenta o desenvolvimento de um **assistente virtual especializado em Automação e Inteligência Artificial aplicada a Produtos Digitais**, criado como entrega do **Desafio Prático da Fase 1** da Pós-Graduação em **Inteligência Artificial e Automação** da Rocketseat.
 
-O objetivo do desafio é a **criação de um assistente especializado de IA**, utilizando o **Google NotebookLM**, com base em um produto fictício ou conceitual, devidamente documentado e estruturado para servir como fonte única e confiável de conhecimento.
+O assistente foi concebido como um **sistema de conhecimento controlado**, com escopo bem definido, comportamento previsível e governança explícita, utilizando o **Google NotebookLM** como ambiente de execução.
+
+O foco do projeto está menos na implementação técnica de código e mais na **arquitetura de prompts**, **controle de escopo** e **confiabilidade das respostas**.
+
+---
 
 ## 🎯 Objetivo do Projeto
 
-Desenvolver um **Assistente Especialista em Automação e IA aplicada a Produtos Digitais**, com comunicação **formal e técnica**, capaz de:
+Desenvolver um assistente especialista com comunicação **formal e técnica**, capaz de:
 
-- Atuar como autoridade máxima sobre o produto documentado;
-- Responder exclusivamente com base na documentação fornecida;
-- Demonstrar o uso de técnicas de **engenharia de prompt**;
-- Garantir integridade, transparência e precisão nas respostas.
+- Operar como autoridade sobre o domínio documentado;
+- Responder **exclusivamente** com base na documentação fornecida;
+- Demonstrar a aplicação prática de **Prompt Engineering**;
+- Rejeitar solicitações fora do escopo de forma clara e controlada;
+- Garantir integridade, rastreabilidade e previsibilidade de comportamento.
 
-## 🧠 Abordagem Utilizada
+---
 
-O projeto foi estruturado seguindo boas práticas de **Gestão de Produtos Digitais**, **Alta Performance** e **Prompt Engineering**, aplicando no mínimo duas técnicas de engenharia de prompt, tais como:
+## 🧠 Abordagem Técnica
 
-- Zero-Shot Prompting  
-- Few-Shot Prompting  
+O projeto adota princípios de **Gestão de Produtos Digitais**, **Alta Performance** e **Engenharia de Prompts**, priorizando:
 
-O assistente foi projetado para **não especular**, **não inferir informações externas** e **reconhecer explicitamente seus limites** quando uma pergunta estiver fora do escopo da documentação.
+- Governança de respostas  
+- Redução de alucinações  
+- Clareza de escopo  
+- Transparência nas limitações do assistente  
 
-## 🧠 Técnicas de Prompt Engineering Utilizadas
+O assistente **não realiza inferências externas**, **não utiliza conhecimento implícito** e **não responde perguntas não documentadas**.
 
-O desenvolvimento do assistente utilizou técnicas consolidadas de Prompt Engineering com foco em previsibilidade, governança e confiabilidade das respostas:
+---
 
-- **Definição explícita de papel (Role Prompting)**  
-  O assistente opera sob um papel claramente definido, restringindo suas respostas ao domínio de automação, inteligência artificial e produtos digitais.
+## 🧩 Técnicas de Prompt Engineering Aplicadas
 
-- **Classificação de escopo (Prompt Routing / Guardrails)**  
-  Implementação de um classificador responsável por identificar se uma solicitação está dentro ou fora do escopo permitido, recusando educadamente perguntas não relacionadas.
+O comportamento do assistente foi estruturado a partir das seguintes técnicas:
 
-- **Fonte de conhecimento fechada (Closed-Book Prompting)**  
-  O assistente responde exclusivamente com base nos documentos fornecidos, evitando inferências externas ou informações não documentadas.
+### 🔹 Definição explícita de papel (Role Prompting)
+O assistente opera sob um papel técnico bem delimitado, restrito aos temas de automação, inteligência artificial e produtos digitais.
 
-- **Padrão de recusa controlada (Safe Refusal Pattern)**  
-  Perguntas fora do escopo resultam em respostas claras, educadas e transparentes, sem tentativa de “improvisação”.
+### 🔹 Classificação de escopo (Prompt Routing / Guardrails)
+Um classificador dedicado avalia se a solicitação está dentro ou fora do escopo permitido, direcionando a resposta adequada ou acionando recusa controlada.
 
-- **Uso de exemplos orientadores (Few-Shot Prompting)**  
-  Exemplos explícitos foram utilizados para reforçar o comportamento esperado em cenários dentro e fora do escopo.
+### 🔹 Fonte de conhecimento fechada (Closed-Book Prompting)
+As respostas são geradas exclusivamente a partir dos documentos fornecidos no NotebookLM, sem uso de conhecimento externo.
 
-Essas técnicas garantem previsibilidade de comportamento, redução de alucinações e maior confiabilidade das respostas geradas.
+### 🔹 Padrão de recusa controlada (Safe Refusal Pattern)
+Perguntas fora do escopo resultam em respostas educadas, objetivas e transparentes, sem tentativa de improvisação.
 
+### 🔹 Uso de exemplos orientadores (Few-Shot Prompting)
+Exemplos explícitos reforçam o comportamento esperado em cenários válidos e inválidos.
+
+Essas técnicas garantem **previsibilidade**, **redução de riscos** e **confiabilidade** das respostas.
+
+---
 
 ## 📁 Estrutura do Repositório
 
@@ -56,30 +67,37 @@ pos-ia-fase1-assistente-especialista/
     └── prompt-assistente.md
     └── prompt-classificacao-escopo.md
 
-### Descrição dos arquivos
+### 📄 Descrição dos Arquivos
 
 - **README.md**  
-  Documento introdutório do projeto e contextualização do desafio.
+  Visão geral, abordagem técnica e contextualização do desafio.
 
 - **docs/produto.md**  
   Documento do produto, utilizado como **base única de conhecimento** pelo assistente no NotebookLM.
 
 - **docs/prompt-assistente.md**  
-  Documento contendo o **prompt completo do assistente**, incluindo:
-  - Definição de personalidade  
-  - Diretrizes de comportamento  
-  - Técnicas de engenharia de prompt aplicadas
- 
+  Prompt principal do assistente, incluindo:
+  - Papel e personalidade
+  - Diretrizes de comportamento
+  - Restrições e governança
+
 - **docs/prompt-classificacao-escopo.md**  
-  Prompt responsável pela classificação de escopo e governança das respostas.
+  Prompt responsável pela **classificação de escopo** e controle de acesso ao domínio permitido.
+
+- **docs/prompt-avaliacao-impacto.md**  
+  Prompt dedicado à **avaliação de impacto, risco e eficiência** de decisões relacionadas à automação e IA em produtos digitais.
+
+---
 
 ## 🚀 Entrega do Desafio
 
-O link deste repositório é utilizado como **material oficial de entrega**, conforme exigido no desafio.  
-O assistente criado no Google NotebookLM foi configurado como **público**, com acesso aos documentos aqui disponibilizados.
+Este repositório é utilizado como **material oficial de entrega**, conforme exigido no desafio.
 
-## 🧑‍💻 Autor
+O assistente foi configurado no **Google NotebookLM** com acesso público aos documentos aqui disponibilizados, permitindo validação do comportamento e da arquitetura proposta.
+
+---
+
+## 👤 Autor
 
 **Rodrigo Moura Araújo**  
-Pós-Graduação em Inteligência Artificial e Automação – Rocketseat
-
+Pós-Graduação em Inteligência Artificial e Automação — Rocketseat
