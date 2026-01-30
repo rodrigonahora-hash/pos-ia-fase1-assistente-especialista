@@ -97,6 +97,21 @@ O assistente foi configurado no **Google NotebookLM** com acesso público aos do
 
 ---
 
+## 🔗 Acesso ao Assistente (NotebookLM)
+
+O assistente foi implementado utilizando o **Google NotebookLM** e está configurado como **público**, com todas as fontes visíveis.
+
+O link abaixo permite a avaliação direta do comportamento do assistente, incluindo:
+- Classificação de escopo  
+- Respostas dentro do domínio definido  
+- Recusas controladas para perguntas fora de escopo  
+- Histórico de testes realizados durante o desenvolvimento  
+
+👉 **Acesso público ao NotebookLM:**  
+https://notebooklm.google.com/notebook/6edacb58-a559-40b0-9215-277e80518969
+
+---
+
 ## 👤 Autor
 
 **Rodrigo Moura Araújo**  
