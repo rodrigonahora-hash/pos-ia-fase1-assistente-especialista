@@ -8,15 +8,15 @@ O assistente foi desenvolvido utilizando o Google NotebookLM.
 ⚠️ **Observação importante para avaliação:**
 O NotebookLM exige autenticação com conta Google, mesmo quando configurado como público (todo o notebook à qualquer pessoa com o link).
 
+🔗 Link do NotebookLM (ambiente original):
+https://notebooklm.google.com/notebook/6edacb58-a559-40b0-9215-277e80518969
+
 👉 Caso o link solicite login, todo o conteúdo do projeto está integralmente documentado neste repositório, incluindo:
 
 - 📄 Descrição do Produto → `/docs/produto.md`
 - 🧠 Prompt do Assistente → `/docs/prompt-assistente.md`
 - 🧭 Classificador de Escopo → `/docs/prompt-classificacao-escopo.md`
 - ⚠️ Avaliação de Impacto e Risco → `/docs/prompt-avaliacao-impacto.md`
-
-🔗 Link do NotebookLM (ambiente original):
-https://notebooklm.google.com/notebook/6edacb58-a559-40b0-9215-277e80518969
 
 ---
 
