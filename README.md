@@ -1,5 +1,26 @@
 # Pós IA – Fase 1 | Assistente Especialista em Automação e IA aplicada a Produtos Digitais
 
+---
+
+## 🔗 Acesso ao Assistente (NotebookLM)
+
+O assistente foi desenvolvido utilizando o Google NotebookLM.
+
+⚠️ **Observação importante para avaliação:**
+O NotebookLM exige autenticação com conta Google, mesmo quando configurado como público (todo o notebook à qualquer pessoa com o link).
+
+👉 Caso o link solicite login, todo o conteúdo do projeto está integralmente documentado neste repositório, incluindo:
+
+- 📄 Descrição do Produto → `/docs/produto.md`
+- 🧠 Prompt do Assistente → `/docs/prompt-assistente.md`
+- 🧭 Classificador de Escopo → `/docs/prompt-classificacao-escopo.md`
+- ⚠️ Avaliação de Impacto e Risco → `/docs/prompt-avaliacao-impacto.md`
+
+🔗 Link do NotebookLM (ambiente original):
+https://notebooklm.google.com/notebook/6edacb58-a559-40b0-9215-277e80518969
+
+---
+
 ## 📌 Visão Geral
 
 Este repositório documenta o desenvolvimento de um **assistente virtual especializado em Automação e Inteligência Artificial aplicada a Produtos Digitais**, criado como entrega do **Desafio Prático da Fase 1** da Pós-Graduação em **Inteligência Artificial e Automação** da Rocketseat.
