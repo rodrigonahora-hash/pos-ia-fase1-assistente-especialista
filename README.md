@@ -1,6 +1,5 @@
 # Pós IA – Fase 1 | Assistente Especialista em Automação e IA aplicada a Produtos Digitais
 
----
 
 ## 🔗 Acesso ao Assistente (NotebookLM)
 
