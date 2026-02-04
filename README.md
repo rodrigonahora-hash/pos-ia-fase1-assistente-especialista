@@ -1,6 +1,5 @@
 # Pós IA – Fase 1 | Assistente Especialista em Automação e IA aplicada a Produtos Digitais
 
-
 ## 🔗 Acesso ao Assistente (NotebookLM)
 
 O assistente foi desenvolvido utilizando o Google NotebookLM.
@@ -75,6 +74,18 @@ Perguntas fora do escopo resultam em respostas educadas, objetivas e transparent
 Exemplos explícitos reforçam o comportamento esperado em cenários válidos e inválidos.
 
 Essas técnicas garantem **previsibilidade**, **redução de riscos** e **confiabilidade** das respostas.
+
+---
+
+## Evidências de Teste do Assistente
+
+O assistente foi testado com perguntas dentro e fora do escopo definido,
+comportando-se de forma consistente, ética e alinhada à base documental.
+
+Exemplos de testes:
+- Perguntas fora de escopo (ex: saúde, treino físico)
+- Tentativas de extrapolação (ferramentas não documentadas)
+- Avaliação de impacto e riscos
 
 ---
 
